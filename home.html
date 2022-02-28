@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta title="practice div!">
+    <style>
+        * {
+            border: 1px solid white;
+        }
+        html{
+            background-color: blue;
+        }
+        body{
+            background-color: tan;/**div 에 속성값을 안 주면 나타나지 않는다. div가 안 생겨서 body도 생기지 않기 때문이다**/
+            padding: 10px;
+        }
+        div{
+            height: 150px;
+            width: 150px;
+            padding: 10px;
+        }
+        #first{
+            background-color: red;
+            height: 150px;
+            width: 150px;
+        }
+        #second{
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+        }
+        #third{
+            background-color: yellow;
+            height: 50px;
+            width: 50px;
+        }
+        #fourth{
+            background-color: green;
+            height: 25px;
+            width: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        <div id="second">
+            <div id="third">
+                <div id="fourth">
+                    <span>ll</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

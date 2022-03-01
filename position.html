@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <!--position은 레이아웃이 아니라 조금 옮기고 싶을 때 사용한다.-->
+    <head>
+        <style>
+            body{
+                height: 500vh;
+                margin: 20px;
+            }
+            div{
+                width: 300px;
+                height: 300px;
+                background-color: teal;
+                color: white;
+                opacity: 0.2;
+            }
+            #green{
+                position: fixed; /*position이 fixed면 최상위 레이어에 있다. 그 전의 레이어들 다 무시한다.*/
+            }
+            #different{
+                background-color: wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="green"></div>
+        <div id="different"></div>
+    </body>
+</html>
